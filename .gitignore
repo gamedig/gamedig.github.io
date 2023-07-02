@@ -1,0 +1,10 @@
+node_modules
+package-lock.json
+dist
+.vitepress/cache
+
+# Others
+.idea/
+.venv/
+.vscode/
+
