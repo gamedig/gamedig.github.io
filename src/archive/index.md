@@ -1,6 +1,6 @@
 ---
-title: Protocol Archive
-description: A archive of query protocols that are widely used
+title: Archive
+description: A archive of relavent documents relating to GameDig and the underlying protocols
 ---
 
 ::: warning :construction: Uh oh!

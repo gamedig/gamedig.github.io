@@ -42,8 +42,6 @@ export default {
   },
 };
 
-
-
 // If this code is running in a browser
 if (typeof window !== "undefined") {
   // Detect the browser, add a class to the root HTML element for conditional styling

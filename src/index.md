@@ -4,6 +4,7 @@ title: "GameDig"
 
 hero:
   image:
+    # This is blank svg for now as there wasn't a good image to use
     src: /assets/images/icons/blank.svg
     alt: GameDig
   name: "GameDig"
@@ -12,10 +13,10 @@ hero:
   actions:
     - theme: brand
       text: Get Involved
-      link: /guide/getting-started
+      link: /guide/
     - theme: alt
       text: Libraries
-      link: 
+      link: /librar
       target: _blank
     - theme: alt
       text: Archive
@@ -32,7 +33,7 @@ features:
   - icon: <span class="i-carbon:communication-unified"></span>
     title: Community Support
     details: "An active community support via Discord and GitHub, providing valuable insights and troubleshooting assistance."
-    link: 
+    link: https://discord.gg/6WjmBsk2Xh
     linkText: "Join Discord"
 
   - icon: <span class="i-carbon:development"></span>
@@ -47,29 +48,11 @@ features:
     link: 
     linkText: "Learn More"
 
-  - icon: <span class="i-carbon:ibm-cloud-key-protect"></span>
-    title: Secure
-    details: "Built with a focus on security to keep your game server interactions safe and reliable."
-    link: 
-    linkText: "Security Policy"
-
   - icon: <span class="i-carbon:scale"></span>
     title: Scalable
     details: "Our libraries can scale to handle small to large scale game server querying needs with ease."
     link: 
     linkText: "Learn More About Scalability"
-
-  - icon: <span class="i-carbon:server-proxy"></span>
-    title: Network Friendly
-    details: "Designed to optimize network usage during game server queries."
-    link: 
-    linkText: "Learn More"
-
-  - icon: <span class="i-carbon:carbon-for-ibm-product"></span>
-    title: Protocol Archive
-    details: "We maintain an archive of game server protocols, ensuring compatibility with a wide range of games."
-    link: 
-    linkText: "Browse Protocol Archive"
 
   - icon: <span class="i-carbon:logo-github"></span>
     title: Open Collaboration

@@ -1,26 +1,25 @@
 .vp-code-group .tabs label {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 table {
-    width: 100% !important;
-    display: table;
+  width: 100% !important;
+  display: table;
 }
 
 .custom-block.tip .custom-block-title {
-    color: var(--vp-c-brand);
+  color: var(--vp-c-brand);
 }
 
 .VPHero .image-bg {
-    z-index: 1;
-    opacity: 0.8;
-    transition: opacity 1s ease;
+  z-index: 1;
+  opacity: 0.8;
+  transition: opacity 1s ease;
 }
 
 .VPHero .image-container:hover .image-bg {
-    opacity: 0.2;
+  opacity: 0.2;
 }
-
 
 /**
    * VitePress: Custom fix
@@ -32,52 +31,57 @@ table {
     over scoped class data attribute.
   */
 .dark .vp-doc a,
-.dark .vp-doc a>code,
+.dark .vp-doc a > code,
 .dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
 .dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
 .dark .link.link:hover,
 .dark .link.link.active,
 .dark .edit-link-button.edit-link-button,
 .dark .pager-link .title {
-    color: var(--vp-c-brand-lighter);
+  color: var(--vp-c-brand-lighter);
 }
 
 .dark .vp-doc a:hover,
-.dark .vp-doc a>code:hover {
-    color: var(--vp-c-brand-lightest);
-    opacity: 1;
+.dark .vp-doc a > code:hover {
+  color: var(--vp-c-brand-lightest);
+  opacity: 1;
 }
 
 /* Transition by color instead of opacity */
 .dark .vp-doc .custom-block a {
-    transition: color 0.25s;
+  transition: color 0.25s;
 }
-
 
 /* VitePress Search */
 .VPLocalSearchBox .result {
-    --vp-c-bg-search-result: var(--vp-c-bg);
-    background: var(--vp-c-bg-search-result) !important;
-    padding: 4px !important;
-    border: 1px solid var(--vp-c-divider) !important;
+  --vp-c-bg-search-result: var(--vp-c-bg);
+  background: var(--vp-c-bg-search-result) !important;
+  padding: 4px !important;
+  border: 1px solid var(--vp-c-divider) !important;
 }
 
 .VPLocalSearchBox .result.selected {
-    --vp-c-bg-search-result: var(--vp-c-bg-soft) !important;
+  --vp-c-bg-search-result: var(--vp-c-bg-soft) !important;
 }
 
 .VPLocalSearchBox .result .excerpt-gradient-top {
-    background: linear-gradient(var(--vp-c-bg-search-result), transparent) !important;
+  background: linear-gradient(
+    var(--vp-c-bg-search-result),
+    transparent
+  ) !important;
 }
 
 .VPLocalSearchBox .result .excerpt-gradient-bottom {
-    background: linear-gradient(transparent, var(--vp-c-bg-search-result)) !important;
+  background: linear-gradient(
+    transparent,
+    var(--vp-c-bg-search-result)
+  ) !important;
 }
 
 .VPLocalSearchBox .title-icon {
-    display: none;
+  display: none;
 }
 
 .VPLocalSearchBox .excerpt-wrapper {
-    margin-top: 4px;
+  margin-top: 4px;
 }

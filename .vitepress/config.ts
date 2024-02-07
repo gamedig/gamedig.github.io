@@ -3,14 +3,25 @@ import { defineConfig } from "vitepress";
 import Unocss from "unocss/vite";
 import Components from "unplugin-vue-components/vite";
 
+const title = "GameDig";
+const description = "GameDig is a library for querying game servers and parsing responses.";
+const author = "GameDig Organization & Contributors";
+
+
 export default defineConfig({
   lang: "en-US",
-  title: "GameDig",
-  titleTemplate: "GameDig",
-  description:
-    "GameDig is a library for querying game servers and parsing responses.",
+  title,
+  titleTemplate: title,
+  description,
   outDir: "dist",
   srcDir: "src",
+
+
+
+
+
+
+
   vite: {
     plugins: [
       Unocss({
@@ -35,6 +46,10 @@ export default defineConfig({
       },
     },
   },
+  sitemap: {
+    //TODO: Replace once published
+    hostname: "http://localhost",
+  },
 
   head: [
     [
@@ -53,7 +68,7 @@ export default defineConfig({
       },
     ],
   ],
-  
+
   lastUpdated: true,
   cleanUrls: true,
 
@@ -80,12 +95,7 @@ export default defineConfig({
     ],
     footer: {
       message: "Made with ❤️",
-      copyright: "Copyright © 2023-PRESENT GameDig & Contributors",
-    },
-    carbonAds: {
-      // Helping Vue while this website doesn't have enough traffic
-      code: "CEBDT27Y",
-      placement: "vuejsorg",
+      copyright: "Copyright © 2023-2024 GameDig Organization & Contributors",
     },
   },
 });
