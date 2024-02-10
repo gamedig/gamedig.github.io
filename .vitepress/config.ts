@@ -4,9 +4,9 @@ import Unocss from "unocss/vite";
 import Components from "unplugin-vue-components/vite";
 
 const title = "GameDig";
-const description = "GameDig is a library for querying game servers and parsing responses.";
+const description =
+  "GameDig is a library for querying game servers and parsing responses.";
 const author = "GameDig Organization & Contributors";
-
 
 export default defineConfig({
   lang: "en-US",
@@ -15,12 +15,6 @@ export default defineConfig({
   description,
   outDir: "dist",
   srcDir: "src",
-
-
-
-
-
-
 
   vite: {
     plugins: [
@@ -47,8 +41,7 @@ export default defineConfig({
     },
   },
   sitemap: {
-    //TODO: Replace once published
-    hostname: "http://localhost",
+    hostname: "https://gamedig.github.io",
   },
 
   head: [
@@ -86,7 +79,7 @@ export default defineConfig({
     },
     sidebar: {},
     editLink: {
-      pattern: "https://github.com/todo/edit/main/docs/:path",
+      pattern: "https://github.com/gamedig/gamedig.github.io/edit/main/:path",
       text: "Suggest changes to this page",
     },
     socialLinks: [
