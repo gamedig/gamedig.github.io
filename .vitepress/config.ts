@@ -79,7 +79,7 @@ export default defineConfig({
     },
     sidebar: {},
     editLink: {
-      pattern: "https://github.com/gamedig/gamedig.github.io/edit/main/:path",
+      pattern: "https://github.com/gamedig/gamedig.github.io/edit/main/src/:path",
       text: "Suggest changes to this page",
     },
     socialLinks: [
