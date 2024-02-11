@@ -90,7 +90,7 @@ pnpm add --save-dev @types/gamedig
 - GitHub Repository: [rust-GameDig on GitHub](https://github.com/gamedig/rust-gamedig)
 - Crates.io Package: [GameDig on Crates.io](https://crates.io/crates/gamedig)
 - Compatibility: Minimum supported Rust version is `v1.65.0`.
-- Community Engagement: Join the [GameDig Discord Server](https://discord.gg/NVCMn3tnxH) for community discussions and support.
+- Community Engagement: Join the [GameDig Discord Server](https://discord.gg/NVCMn3tnxH) for community discussions.
 
 **Example Query in Rust:**
 
