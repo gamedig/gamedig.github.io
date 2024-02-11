@@ -69,6 +69,7 @@ const fetchNewContributors = async (now: number) => {
   const repos = [
     { owner: "gamedig", repo: "rust-gamedig" },
     { owner: "gamedig", repo: "node-gamedig" },
+    { owner: "gamedig", repo: "gamedig.github.io" },
   ];
 
   let contributionsMap = new Map();
