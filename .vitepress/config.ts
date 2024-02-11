@@ -101,7 +101,8 @@ export default defineConfig({
       },
     ],
     footer: {
-      message: "Crafted with ❤️ | GameDig © 2023-2024 GameDig Organization & Contributors. Licensed under the MIT License.",
+      message:
+        "Made with ❤️ | Copyright © 2022-2024 GameDig Organization & Contributors. Licensed under the <a href='/license'>MIT License</a>",
       copyright: `The npm, Rust, GitHub, and Discord logos are displayed here for navigational purposes only, to facilitate direct links to associated projects and our community. This use does not imply any endorsement, sponsorship, or affiliation with npm, Inc., the Rust Foundation, GitHub, Inc., or Discord Inc. These logos are acknowledged as trademarks of their respective owners and are utilized within the scope of fair use.`,
     },
   },
