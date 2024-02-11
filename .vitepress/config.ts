@@ -90,7 +90,7 @@ export default defineConfig({
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/gamedig" },
-      { icon: "discord", link: "https://discord.gg" },
+      { icon: "discord", link: "https://discord.gg/aEFPRkm984" },
       {
         icon: { svg: read("../src/public/assets/images/icons/npm.svg") },
         link: "https://www.npmjs.com/package/gamedig",
