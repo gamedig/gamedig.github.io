@@ -16,18 +16,18 @@ hero:
       link: /guide/
     - theme: alt
       text: Libraries
-      link: /librar
+      link: /library/
       target: _blank
     - theme: alt
       text: Archive
-      link: 
+      link: /archive/
       target: _blank
 
 features:
   - icon: <span class="i-carbon:network-overlay"></span>
     title: Game Server Libraries
     details: High-performance open source libraries to query and interact with game servers.
-    link: 
+    link: /library/
     linkText: "Explore Libraries"
 
   - icon: <span class="i-carbon:communication-unified"></span>
