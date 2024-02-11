@@ -1,4 +1,6 @@
 import { defineConfig } from "vitepress";
+import { readFileSync } from "fs";
+import { resolve } from "path";
 
 import Unocss from "unocss/vite";
 import Components from "unplugin-vue-components/vite";
@@ -7,6 +9,9 @@ const title = "GameDig";
 const description =
   "GameDig is a library for querying game servers and parsing responses.";
 const author = "GameDig Organization & Contributors";
+
+const read = (relative: string) =>
+  readFileSync(resolve(process.cwd(), ".vitepress", relative), "utf-8");
 
 export default defineConfig({
   lang: "en-US",
@@ -79,16 +84,26 @@ export default defineConfig({
     },
     sidebar: {},
     editLink: {
-      pattern: "https://github.com/gamedig/gamedig.github.io/edit/main/:path",
+      pattern:
+        "https://github.com/gamedig/gamedig.github.io/edit/main/src/:path",
       text: "Suggest changes to this page",
     },
     socialLinks: [
       { icon: "github", link: "https://github.com/gamedig" },
       { icon: "discord", link: "https://discord.gg/aEFPRkm984" },
+      {
+        icon: { svg: read("../src/public/assets/images/icons/npm.svg") },
+        link: "https://www.npmjs.com/package/gamedig",
+      },
+      {
+        icon: { svg: read("../src/public/assets/images/icons/rust.svg") },
+        link: "https://crates.io/crates/gamedig",
+      },
     ],
     footer: {
-      message: "Made with ❤️",
-      copyright: "Copyright © 2023-2024 GameDig Organization & Contributors",
+      message:
+        "Made with ❤️ | Copyright © 2022-2024 GameDig Organization & Contributors. Licensed under the <a href='/license'>MIT License</a>",
+      copyright: `The npm, Rust, GitHub, and Discord logos are displayed here for navigational purposes only, to facilitate direct links to associated projects and our community. This use does not imply any endorsement, sponsorship, or affiliation with npm, Inc., the Rust Foundation, GitHub, Inc., or Discord Inc. These logos are acknowledged as trademarks of their respective owners and are utilized within the scope of fair use.`,
     },
   },
 });
