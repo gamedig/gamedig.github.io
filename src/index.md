@@ -17,11 +17,9 @@ hero:
     - theme: alt
       text: Libraries
       link: /library/
-      target: _blank
     - theme: alt
       text: Archive
       link: /archive/
-      target: _blank
 
 features:
   - icon: <span class="i-carbon:network-overlay"></span>
