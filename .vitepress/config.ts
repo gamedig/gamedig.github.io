@@ -14,13 +14,18 @@ const read = (relative: string) =>
   readFileSync(resolve(process.cwd(), ".vitepress", relative), "utf-8");
 
 export default defineConfig({
-  lang: "en-US",
   title,
   titleTemplate: title,
   description,
   outDir: "dist",
   srcDir: "src",
-
+  lang: "en-US",
+  locales: {
+    root: {
+      label: "English",
+      lang: "en",
+    },
+  },
   vite: {
     plugins: [
       Unocss({
@@ -102,8 +107,8 @@ export default defineConfig({
     ],
     footer: {
       message:
-        "Made with ❤️ | Adheres to the <a href='/code_of_conduct'>Contributor Covenant Code of Conduct</a>",
-      copyright: `Copyright © 2022-2024 GameDig Organization & Contributors. Licensed under the <a href='/legal'>MIT License</a>.`,
+        "Made with ❤️ | Adheres to the <a href='/en/code_of_conduct'>Contributor Covenant Code of Conduct</a>",
+      copyright: `Copyright © 2022-2024 GameDig Organization & Contributors. Licensed under the <a href='/en/legal'>MIT License</a>.`,
     },
     // Support vuejs.org for now
     carbonAds: { code: "CEBDT27Y", placement: "vuejsorg" },

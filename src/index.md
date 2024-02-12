@@ -13,19 +13,19 @@ hero:
   actions:
     - theme: brand
       text: Get Involved
-      link: /guide/
+      link: /en/guide/
     - theme: alt
       text: Libraries
-      link: /library/
+      link: /en/library/
     - theme: alt
       text: Archive
-      link: /archive/
+      link: /en/archive/
 
 features:
   - icon: <span class="i-carbon:network-overlay"></span>
     title: Game Server Libraries
     details: High-performance open source libraries to query and interact with game servers.
-    link: /library/
+    link: /en/library/
     linkText: "Explore Libraries"
 
   - icon: <span class="i-carbon:communication-unified"></span>
