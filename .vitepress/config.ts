@@ -105,5 +105,7 @@ export default defineConfig({
         "Made with ❤️ | Adheres to the <a href='/code_of_conduct'>Contributor Covenant Code of Conduct</a>",
       copyright: `Copyright © 2022-2024 GameDig Organization & Contributors. Licensed under the <a href='/legal'>MIT License</a>.`,
     },
+    // Support vuejs.org for now
+    carbonAds: { code: "CEBDT27Y", placement: "vuejsorg" },
   },
 });
