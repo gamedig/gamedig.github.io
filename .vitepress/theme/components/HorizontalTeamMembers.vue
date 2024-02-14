@@ -69,6 +69,9 @@ onMounted(async () => {
     class="horizontal-team-members-wrapper"
     @mouseenter="onMouseEnter"
     @mouseleave="onMouseLeave"
+    @touchstart="onMouseEnter"
+    @touchend="onMouseLeave"
+    @touchcancel="onMouseLeave"
   >
     <VPTeamMembers
       ref="componentRef"
