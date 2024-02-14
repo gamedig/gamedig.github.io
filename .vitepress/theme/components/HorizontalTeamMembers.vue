@@ -19,6 +19,15 @@ const props = withDefaults(defineProps<Props>(), {
 });
 
 const componentRef: Ref<VPTeamMembersComponent | null> = ref(null);
+const isMouseOver = ref(false);
+
+function onMouseEnter() {
+  isMouseOver.value = true;
+}
+
+function onMouseLeave() {
+  isMouseOver.value = false;
+}
 
 onMounted(async () => {
   await nextTick();
@@ -33,6 +42,7 @@ onMounted(async () => {
 
   let scrollAmount = 1;
   const scrollFunction = () => {
+    if (isMouseOver.value) return;
     if (scrollContainer.scrollWidth <= scrollContainer.clientWidth) return;
 
     scrollContainer.scrollLeft += scrollAmount;
@@ -55,8 +65,17 @@ onMounted(async () => {
 </script>
 
 <template>
-  <div class="horizontal-team-members-wrapper">
-    <VPTeamMembers ref="componentRef" :size="size" :members="members" class="horizontal-team-members" />
+  <div
+    class="horizontal-team-members-wrapper"
+    @mouseenter="onMouseEnter"
+    @mouseleave="onMouseLeave"
+  >
+    <VPTeamMembers
+      ref="componentRef"
+      :size="size"
+      :members="members"
+      class="horizontal-team-members"
+    />
   </div>
 </template>
 <style>
