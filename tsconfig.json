@@ -1,17 +1,19 @@
 {
-  "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "lib": ["esnext", "DOM"],
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "strict": true,
-    "strictNullChecks": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
-    "skipDefaultLibCheck": true,
-    "skipLibCheck": true,
-    "noUncheckedIndexedAccess": true,
-  },
-  "include": ["./.vitepress/theme/**/**/*", "./.vitepress/config"]
+    "compilerOptions": {
+        "target": "esnext",
+        "module": "esnext",
+        "lib": ["esnext", "DOM"],
+
+        "strict": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "node",
+        "skipDefaultLibCheck": true,
+        "noUncheckedIndexedAccess": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": ["./.vitepress/theme/**/**/*", "./.vitepress/config"],
+    "exclude": ["node_modules", "dist"]
 }
