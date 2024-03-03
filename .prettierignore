@@ -1,0 +1,7 @@
+/dist
+/node_modules
+/pnpm-lock.yaml
+/.vitepress/cache
+/CODE_OF_CONDUCT.md
+/CONTRIBUTING.md
+/LICENSE.md
