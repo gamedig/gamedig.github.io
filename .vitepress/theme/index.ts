@@ -42,8 +42,7 @@ export default {
             if (isHomePage) {
                 if (!homePageStyle) {
                     homePageStyle = document.createElement('style');
-                    homePageStyle.innerHTML =
-                        ':root { animation: rainbow 12s linear infinite; }';
+                    homePageStyle.innerHTML = ':root { animation: rainbow 12s linear infinite; }';
                     document.body.appendChild(homePageStyle);
                 }
             } else {
