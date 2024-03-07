@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.11.24",
-    "@iconify-json/carbon": "^1.1.30",
+    "@iconify-json/carbon": "^1.1.31",
     "unocss": "^0.58.4",
     "vitepress": "1.0.0-rc.44",
     "unplugin-vue-components": "^0.26.0"
