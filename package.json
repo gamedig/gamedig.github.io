@@ -8,7 +8,7 @@
     "preview": "vitepress preview ."
   },
   "devDependencies": {
-    "@types/node": "^20.11.29",
+    "@types/node": "^20.11.30",
     "@iconify-json/carbon": "^1.1.31",
     "unocss": "^0.58.6",
     "vitepress": "1.0.0-rc.45",
