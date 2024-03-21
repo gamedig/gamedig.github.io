@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress';
 
 import Nav from './nav';
+import SideBar from './sidebar';
 
 export default defineConfig({
     lang: 'en-US',
@@ -8,6 +9,7 @@ export default defineConfig({
 
     themeConfig: {
         nav: Nav(),
+        sidebar: SideBar(),
 
         editLink: {
             pattern: 'https://github.com/gamedig/gamedig.github.io/edit/main/src/:path',
