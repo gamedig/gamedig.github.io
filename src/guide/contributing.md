@@ -34,7 +34,7 @@ identifying areas where you can make a difference.
 ### Setting Up Your Development Environment
 
 Before diving into contributing code, it's crucial to set up your development
-environment properly. Our detailed documentation on
+environment properly. GitHub's detailed documentation on
 [Setting up Git](https://docs.github.com/en/get-started/getting-started-with-git/set-up-git)
 provides step-by-step instructions to help you configure Git on your local
 machine, ensuring a smooth and efficient development process.
@@ -42,8 +42,8 @@ machine, ensuring a smooth and efficient development process.
 ### Understanding GitHub Flow
 
 GitHub Flow is a collaborative development process that facilitates seamless
-teamwork and iteration. To familiarize yourself with this workflow, explore our
-guide on
+teamwork and iteration. To familiarize yourself with this workflow, explore
+GitHub's guide on
 [GitHub flow](https://docs.github.com/en/get-started/using-github/github-flow),
 which outlines best practices for branching, committing changes, and merging
 pull requests.
@@ -52,7 +52,7 @@ pull requests.
 
 One of the primary ways to contribute to GameDig is by collaborating with pull
 requests. Learn how to create, review, and merge pull requests effectively by
-referring to our comprehensive guide on
+referring to the comprehensive guide on
 [Collaborating with pull requests](https://docs.github.com/en/github/collaborating-with-pull-requests).
 This resource covers everything from opening pull requests to addressing
 feedback and resolving conflicts.
@@ -63,7 +63,7 @@ As you begin your journey as a GameDig contributor, remember that you're not
 alone. Our community is here to support you every step of the way. Whether you
 have questions, need guidance, or want to connect with fellow contributors, our
 Discord server provides a welcoming space for discussions and collaboration.
-Join us at [GameDig Community Discord](https://discord.gg/NVCMn3tnxH).
+Join us in the [GameDig Community Discord](https://discord.gg/NVCMn3tnxH).
 
 ### Get Started Today!
 
@@ -72,13 +72,6 @@ on your journey as a GameDig contributor. Start exploring opportunities, making
 meaningful contributions, and shaping the future of GameDig. We can't wait to
 see what you'll accomplish!
 
-::: tip
-
-If you have any questions or need assistance along the way, don't hesitate to
-reach out to our community.
-
-:::
-
 ## Contribution Workflow
 
 ### Identifying and Addressing Issues
@@ -86,14 +79,14 @@ reach out to our community.
 #### Reporting New Issues
 
 If you encounter a problem or see room for improvement, start by checking if
-there's already an [existing issue](https://github.com/github/docs/issues). If
+there's already an [existing issue](https://github.com/gamedig/gamedig.github.io/issues). If
 not, you can create a new issue using the appropriate
-[issue template](https://github.com/github/docs/issues/new/choose) to ensure
+[issue template](https://github.com/gamedig/gamedig.github.io/issues/new/choose) to ensure
 clarity and comprehensiveness.
 
 #### Working on Existing Issues
 
-Browse the list of [open issues](https://github.com/github/docs/issues) to find
+Browse the list of [open issues](https://github.com/gamedig/gamedig.github.io/issues) to find
 something that interests you. You can filter the list by using `labels` to
 narrow down the type of contributions that match your skills and interests. We
 encourage open collaboration and do not assign issues to specific contributors.
@@ -102,20 +95,24 @@ encourage open collaboration and do not assign issues to specific contributors.
 
 #### Quick Edits
 
-For minor corrections like typos or broken links, simply click **Make a
-contribution** at the bottom of any documentation page. This will lead you
-directly to the `.md` file where you can make your changes and submit a pull
-request.
+For minor corrections like typos, broken links or small improvements, simply
+click `Suggest changes to this page` at the bottom of any documentation page.
+This will lead you directly to the `.md` file where you can make your changes
+and submit a pull request.
 
 #### Local Development
 
 For more significant contributions or changes, you might prefer working locally:
 
-1. **Fork the repository**: This allows you to work on your own copy of the
-   documentation or library.
-2. **Set up your development environment**: Ensure you have **Node.js**
-   installed or updated as per the `.node-version` file.
-3. **Create a branch and make your changes**: This is where you can dive into
+1. **Fork the repository**: Click the `Fork` button in the top-right corner of
+   the repository page to create your own copy of the repository.
+2. **Clone the repository**: Use `git clone` to create a local copy of your
+   forked repository.
+3. **Set up your development environment**: Ensure you have **Node.js**
+   installed and updated as per the `engines.node` value in the `package.json`
+4. **Install dependencies**: Run `npm install` to install the necessary
+   dependencies.
+5. **Create a branch and make your changes**: This is where you can dive into
    coding, writing documentation, or making other improvements.
 
 ### Finalizing Your Contribution
@@ -152,7 +149,8 @@ openness in the development process.
 
 For consistency and clarity, we have specific guidelines for naming games and
 creating identification strings within the libraries. Please refer to the
-detailed naming conventions outlined in the contributing guidelines.
+detailed naming conventions outlined in the specific repository's
+`CONTRIBUTING.md` file.
 
 #### Contribution Priorities
 

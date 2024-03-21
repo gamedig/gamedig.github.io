@@ -20,51 +20,55 @@ hero:
       target: _blank
 
 features:
-  - icon: <span class="i-carbon:network-overlay"></span>
-    title: Game Server Libraries
+  - icon: <span class="i-carbon:archive"></span>
+    title: Archive
     details:
-      High-performance open source libraries to query and interact with game
-      servers.
-    link: /library/
-    linkText: 'Explore Libraries'
+      'Dedicated to excellence in game server querying, we document our evolving
+      journey capturing challenges, solutions, and milestones to empower future
+      developers.'
+    link: /archive/
+    linkText: 'Browse Our Archive'
 
   - icon: <span class="i-carbon:communication-unified"></span>
     title: Community Support
     details:
-      'An active community support via Discord and GitHub, providing valuable
-      insights and troubleshooting assistance.'
+      'Join our active community on Discord and GitHub for insights, support,
+      and collaboration. Together, we achieve more.'
     link: https://discord.gg/6WjmBsk2Xh
     linkText: 'Join Discord'
 
   - icon: <span class="i-carbon:development"></span>
     title: Active Development
     details:
-      'Our libraries are under constant development, ensuring they stay
-      up-to-date with the latest game server technologies.'
-    link:
-    linkText: "See What's New"
+      'Stay ahead with our constantly evolving libraries, designed to meet the
+      latest advancements in game server technology.'
+    link: /package/support-list
+    linkText: 'View Support List'
 
+    # This needs to be changed
   - icon: <span class="i-carbon:cloud-download"></span>
-    title: Cross-Platform
+    title: Cross-Platform Compatibility
     details:
-      'Our libraries are compatible across multiple platforms, providing maximum
-      flexibility for developers.'
+      'Maximize flexibility with our libraries, cross-platform compatibility,
+      ensuring seamless integration for developers.'
     link: /guide/key-features
-    linkText: 'Learn More'
+    linkText: 'Discover Key Features'
 
-  - icon: <span class="i-carbon:scale"></span>
-    title: Scalable
+    # This overview page got removed in package structue
+  - icon: <span class="i-carbon:terminal"></span>
+    title: Command Line Interface
     details:
-      'Our libraries can scale to handle small to large scale game server
-      querying needs with ease.'
-    link: /guide/key-features
-    linkText: 'Learn More About Scalability'
+      'Unleash the full potential of GameDig through our CLI, engineered for
+      ease of use. Tailor your game server queries with precision and
+      efficiency.'
+    link: /cli/
+    linkText: Explore the CLI
 
   - icon: <span class="i-carbon:logo-github"></span>
     title: Open Collaboration
     details:
-      'We welcome contributions from the community. Join us in developing the
-      next generation of game server libraries.'
+      'Contribute to the forefront of game server querying. Your expertise can
+      shape the future of GameDig.'
     link: /guide/contributing
-    linkText: 'See How to Contribute'
+    linkText: 'How to Contribute'
 ---

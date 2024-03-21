@@ -1,6 +1,6 @@
 ---
-title: Archive
-description: A collection of archived documentation
+title: Node GameDig Library
+description: A Node library for querying game servers
 ---
 
 ::: warning :construction: Uh oh!

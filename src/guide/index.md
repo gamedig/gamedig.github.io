@@ -40,13 +40,3 @@ incorporate user feedback. We recommend bookmarking this page and revisiting it
 periodically for the most current information and resources.
 
 :::
-
-::: details How to Get Involved
-
-Your contributions are what make our documentation dynamic and relevant. If you
-have suggestions, feedback, or wish to contribute directly, please reach out via
-our GitHub repository. You can also suggest edits directly from the page by
-clicking the `Suggest changes to this page` below. We look forward to hearing
-from you!
-
-:::
