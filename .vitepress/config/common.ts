@@ -25,6 +25,7 @@ export default defineConfig({
     },
 
     markdown: {
+        math: true,
         theme: {
             light: 'vitesse-light',
             dark: 'vitesse-dark',
