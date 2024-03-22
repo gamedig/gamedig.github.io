@@ -1,87 +1,93 @@
+/* Base styles for VitePress code grouping tabs */
 .vp-code-group .tabs label {
-  background-color: transparent;
+    /* Set the background color to transparent for tab labels */
+    background-color: transparent;
 }
 
+/* Global tables */
 table {
-  width: 100% !important;
-  display: table;
+    /* Ensure table width takes up 100% of its container */
+    width: 100% !important;
+    display: table;
 }
 
+/* Custom tip blocks */
 .custom-block.tip .custom-block-title {
-  color: var(--vp-c-brand);
+    color: var(--vp-c-brand);
 }
 
+/* Hero section image background */
 .VPHero .image-bg {
-  z-index: 1;
-  opacity: 0.8;
-  transition: opacity 1s ease;
+    /* Set a z-index to ensure it stacks correctly */
+    z-index: 1;
+    /* Start with a slightly transparent image */
+    opacity: 0.8;
+    /* Smooth transition for opacity changes */
+    transition: opacity 1s ease;
 }
 
+/* Hover effects for hero section image background */
 .VPHero .image-container:hover .image-bg {
-  opacity: 0.2;
+    /* Decrease opacity on hover for a visual effect */
+    opacity: 0.2;
 }
 
-/**
-   * VitePress: Custom fix
-   * -------------------------------------------------------------------------- */
+/* Accessibility and style adjustments for dark mode */
+/* ----------------------------------------------------------- */
 
-/*
-    Use lighter colors for links in dark mode for a11y.
-    Also specify some classes twice to have higher specificity
-    over scoped class data attribute.
-  */
+/* Link colors in dark mode for better readability */
 .dark .vp-doc a,
 .dark .vp-doc a > code,
-.dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
-.dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
-.dark .link.link:hover,
-.dark .link.link.active,
-.dark .edit-link-button.edit-link-button,
+.dark .VPNavBarMenuLink:hover,
+.dark .VPNavBarMenuLink.active,
+.dark .link:hover,
+.dark .link.active,
+.dark .edit-link-button,
 .dark .pager-link .title {
-  color: var(--vp-c-brand-lighter);
+    color: var(--vp-c-brand-lighter);
 }
 
+/* Lightest link color on hover in dark mode for distinction */
 .dark .vp-doc a:hover,
 .dark .vp-doc a > code:hover {
-  color: var(--vp-c-brand-lightest);
-  opacity: 1;
+    color: var(--vp-c-brand-lightest);
+    opacity: 1;
 }
 
-/* Transition by color instead of opacity */
+/* Transitions for link color changes */
 .dark .vp-doc .custom-block a {
-  transition: color 0.25s;
+    /* Smooth color transition for links within custom blocks */
+    transition: color 0.25s;
 }
 
-/* VitePress Search */
+/* VitePress local search box styling adjustments */
 .VPLocalSearchBox .result {
-  --vp-c-bg-search-result: var(--vp-c-bg);
-  background: var(--vp-c-bg-search-result) !important;
-  padding: 4px !important;
-  border: 1px solid var(--vp-c-divider) !important;
+    --vp-c-bg-search-result: var(--vp-c-bg);
+    background: var(--vp-c-bg-search-result) !important;
+    padding: 4px !important;
+    border: 1px solid var(--vp-c-divider) !important;
 }
 
+/* Style for selected search result */
 .VPLocalSearchBox .result.selected {
-  --vp-c-bg-search-result: var(--vp-c-bg-soft) !important;
+    --vp-c-bg-search-result: var(--vp-c-bg-soft) !important;
 }
 
+/* Gradient effects for search result excerpts */
 .VPLocalSearchBox .result .excerpt-gradient-top {
-  background: linear-gradient(
-    var(--vp-c-bg-search-result),
-    transparent
-  ) !important;
+    background: linear-gradient(var(--vp-c-bg-search-result), transparent) !important;
 }
 
 .VPLocalSearchBox .result .excerpt-gradient-bottom {
-  background: linear-gradient(
-    transparent,
-    var(--vp-c-bg-search-result)
-  ) !important;
+    background: linear-gradient(transparent, var(--vp-c-bg-search-result)) !important;
 }
 
+/* Hide title icon in the search box */
 .VPLocalSearchBox .title-icon {
-  display: none;
+    display: none;
 }
 
+/* Margin adjustment for excerpt wrapper in search results */
 .VPLocalSearchBox .excerpt-wrapper {
-  margin-top: 4px;
+    margin-top: 4px;
 }
