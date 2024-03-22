@@ -5,46 +5,68 @@ import { onMounted, onUnmounted, ref, nextTick, Ref } from 'vue';
 import type { DefaultTheme } from 'vitepress/theme';
 import { VPTeamMembers } from 'vitepress/theme';
 
+// Wrapper for component element.
 interface VPTeamMembersComponent {
     $el: HTMLElement;
 }
 
+// Defines the props expected by this component, with size being optional.
 interface Props {
     size?: 'small' | 'medium';
     members: DefaultTheme.TeamMember[];
 }
 
+// Setup component props with default values using withDefaults.
 const props = withDefaults(defineProps<Props>(), {
+    // Default size is set to 'medium'.
     size: 'medium',
 });
 
+// Refs for the component instance and mouse over state.
 const componentRef: Ref<VPTeamMembersComponent | null> = ref(null);
-const isMouseOver = ref(false);
+const pauseScroll = ref(false);
 
-function onMouseEnter() {
-    isMouseOver.value = true;
-}
+// Handler for scroll state.
+const scroll = {
+    pause: () => (pauseScroll.value = true),
+    play: () => (pauseScroll.value = false),
+};
 
-function onMouseLeave() {
-    isMouseOver.value = false;
-}
+// Interval for continuous scrolling.
+let interval: ReturnType<typeof setInterval> | null = null;
 
+// Requires to be stated before the lifecycle hooks.
+// Causes no active component instance if not
+onUnmounted(() => {
+    // Clean up the interval
+    if (interval) {
+        clearInterval(interval);
+    }
+});
+
+// Lifecycle hook for component mount.
 onMounted(async () => {
+    // Ensure the DOM is updated.
     await nextTick();
 
+    // Get the component instance and validate it.
     const component = componentRef.value;
     if (!component || !(component.$el instanceof HTMLElement)) return;
 
+    // Attempt to find the scroll container within the component.
     const scrollContainer = component.$el.querySelector('.container') as HTMLElement | null;
     if (!scrollContainer) return;
 
+    // Initialize scroll behavior.
     let scrollAmount = 1;
     const scrollFunction = () => {
-        if (isMouseOver.value) return;
+        // Pause scrolling if set to true.
+        if (pauseScroll.value) return;
+        // Stop scrolling if the container is fully visible.
         if (scrollContainer.scrollWidth <= scrollContainer.clientWidth) return;
 
+        // Scroll and reverse direction at boundaries.
         scrollContainer.scrollLeft += scrollAmount;
-
         if (
             scrollContainer.scrollLeft >=
                 scrollContainer.scrollWidth - scrollContainer.clientWidth ||
@@ -54,22 +76,19 @@ onMounted(async () => {
         }
     };
 
-    const interval = setInterval(scrollFunction, 20);
-
-    onUnmounted(() => {
-        clearInterval(interval);
-    });
+    // Set the interval for continuous scrolling.
+    interval = setInterval(scrollFunction, 20);
 });
 </script>
 
 <template>
     <div
         class="horizontal-team-members-wrapper"
-        @mouseenter="onMouseEnter"
-        @mouseleave="onMouseLeave"
-        @touchstart="onMouseEnter"
-        @touchend="onMouseLeave"
-        @touchcancel="onMouseLeave"
+        @mouseenter="scroll.pause"
+        @mouseleave="scroll.play"
+        @touchstart="scroll.pause"
+        @touchend="scroll.play"
+        @touchcancel="scroll.play"
     >
         <VPTeamMembers
             ref="componentRef"
