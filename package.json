@@ -20,10 +20,10 @@
         "dev": "vitepress dev .",
         "build": "run-s build:step:*",
         "build:preview": "vitepress preview .",
-        "build:step:format": "prettier --write **/**.{ts,json,yml,md,vue}",
+        "build:step:format": "prettier --write **/**.{ts,json,yml,md,vue,css}",
         "build:step:vitepress": "vitepress build .",
         "check": "run-s check:step:*",
-        "check:step:format": "prettier --check **/**.{ts,json,yml,md,vue}",
+        "check:step:format": "prettier --check **/**.{ts,json,yml,md,vue,css}",
         "check:step:vitepress": "vitepress build .",
         "preinstall": "npx only-allow npm"
     },
