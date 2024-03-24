@@ -1,3 +1,5 @@
+import { computed } from 'vue';
+
 import type { DefaultTheme } from 'vitepress';
 
 export interface TeamMember extends Partial<DefaultTheme.TeamMember> {
@@ -38,35 +40,37 @@ export function createLinks(tm: TeamMember): TeamMember {
     return { ...tm };
 }
 
-export const team: TeamMember[] = [
-    {
-        avatar: 'https://github.com/mmorrisontx.png',
-        name: 'Michael',
-        github: 'mmorrisontx',
-        title: 'Full Stack Developer',
-        org: 'Indeed, Inc.',
-        desc: 'Founder of the GameDig Project & Organization.',
-    },
-    {
-        avatar: 'https://github.com/CosminPerRam.png',
-        name: 'CosminPerRam',
-        github: 'CosminPerRam',
-        title: 'Programmer',
-        org: 'nerds-sh',
-        desc: 'Founder of Rust GameDig & GameDig Maintainer.',
-    },
-    {
-        avatar: 'https://github.com/cainthebest.png',
-        name: 'Cain',
-        github: 'cainthebest',
-        title: 'Backend Developer',
-        desc: 'Rust GameDig & Documentation Maintainer.',
-    },
-    {
-        avatar: 'https://github.com/Douile.png',
-        name: 'Tom',
-        github: 'Douile',
-        title: 'Programmer',
-        desc: 'Rust GameDig Maintainer.',
-    },
-].map(createLinks);
+export const team = computed(() =>
+    [
+        {
+            avatar: 'https://github.com/mmorrisontx.png',
+            name: 'Michael',
+            github: 'mmorrisontx',
+            title: 'Full Stack Developer',
+            org: 'Indeed, Inc.',
+            desc: 'Founder of the GameDig Project & Organization.',
+        },
+        {
+            avatar: 'https://github.com/CosminPerRam.png',
+            name: 'CosminPerRam',
+            github: 'CosminPerRam',
+            title: 'Programmer',
+            org: 'nerds-sh',
+            desc: 'Founder of Rust GameDig & GameDig Maintainer.',
+        },
+        {
+            avatar: 'https://github.com/cainthebest.png',
+            name: 'Cain',
+            github: 'cainthebest',
+            title: 'Backend Developer',
+            desc: 'Rust GameDig & Documentation Maintainer.',
+        },
+        {
+            avatar: 'https://github.com/Douile.png',
+            name: 'Tom',
+            github: 'Douile',
+            title: 'Programmer',
+            desc: 'Rust GameDig Maintainer.',
+        },
+    ].map(createLinks),
+);

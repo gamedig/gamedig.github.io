@@ -100,7 +100,7 @@ const fetchNewContributors = async (now: number) => {
             .filter(
                 // Exclude team members
                 (contributor) =>
-                    !team.some((teamMember) => teamMember.github === contributor.login),
+                    !team.value.some((teamMember) => teamMember.github === contributor.login),
             )
             .filter(
                 // Exclude bots
