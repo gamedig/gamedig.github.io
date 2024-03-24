@@ -5,7 +5,7 @@ description: Explore GameDig - Your Ultimate Game Server Query Tool
 
 ::: warning 🚧 Page Under Construction 🚧
 
-This section of our website is currently being developed to provide you with a
+The majority of our website is currently being developed to provide you with a
 comprehensive and detailed guide on utilizing GameDig effectively. We're
 dedicated to offering you a seamless learning experience, equipped with all the
 necessary tools and insights to integrate GameDig into your projects.
@@ -14,8 +14,8 @@ necessary tools and insights to integrate GameDig into your projects.
 
 ::: tip Stay Tuned
 
-Our team is working diligently to populate this page with rich content that
-includes step-by-step tutorials, best practices, and advanced use cases. Your
+Our team is working diligently to populate with rich content that includes
+step-by-step tutorials, best practices, and advanced use cases. Your
 understanding during this phase is greatly appreciated.
 
 :::
