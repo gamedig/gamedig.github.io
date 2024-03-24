@@ -72,29 +72,29 @@ export default function nav(): DefaultTheme.NavItem[] {
                     items: [
                         {
                             text: 'Games',
-                            link: '/archive/game/',
-                            activeMatch: '^/archive/game/',
+                            link: '/archive/category/game/',
+                            activeMatch: '^/archive/category/game',
                         },
                         {
                             text: 'Libraries',
-                            link: '/archive/library/',
-                            activeMatch: '^/archive/library/',
+                            link: '/archive/category/library/',
+                            activeMatch: '^/archive/category/library',
                         },
                         {
                             text: 'Services',
-                            link: '/archive/service/',
-                            activeMatch: '^/archive/service/',
+                            link: '/archive/category/service/',
+                            activeMatch: '^/archive/category/service',
                         },
                         {
                             text: 'Protocols',
-                            link: '/archive/protocol/',
-                            activeMatch: '^/archive/protocol/',
+                            link: '/archive/category/protocol/',
+                            activeMatch: '^/archive/category/protocol',
                         },
                     ],
                 },
                 {
                     text: 'Glossary',
-                    link: '/archive/glossary',
+                    link: '/archive/glossary/',
                 },
             ],
         },
