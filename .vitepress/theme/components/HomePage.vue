@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue';
 import { VPTeamMembers } from 'vitepress/theme';
 import { createLinks, team } from '../composables/team';
-import HorizontalTeamMembers from './HorizontalContributors.vue';
+import HorizontalContrbutors from './HorizontalContributors.vue';
 
 // Interface for GitHub contributor fetched from GitHub API
 interface GitHubContributor {
@@ -154,7 +154,7 @@ onMounted(fetchContributors);
                         Those Who Helped Make This Possible
                     </h2>
                     <div class="section-content w-full p-10">
-                        <HorizontalTeamMembers size="small" :members="contributors" />
+                        <HorizontalContrbutors size="small" :members="contributors" />
                     </div>
                 </div>
             </main>
