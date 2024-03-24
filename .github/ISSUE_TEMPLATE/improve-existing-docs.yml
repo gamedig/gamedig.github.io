@@ -1,7 +1,7 @@
 name: Improve existing content
 description: Make a suggestion to improve the content in an existing article.
 labels:
-    - content
+    - enhancement
 body:
     - type: markdown
       attributes:

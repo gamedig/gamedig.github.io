@@ -1,7 +1,7 @@
 name: Improve the site functionality or performance
 description: Make a suggestion about the technical implementation of gamedig.github.io.
 labels:
-    - feature
+    - enhancement
 body:
     - type: markdown
       attributes:
