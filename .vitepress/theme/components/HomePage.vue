@@ -2,7 +2,7 @@
 import { ref, onMounted } from 'vue';
 import { VPTeamMembers } from 'vitepress/theme';
 import { createLinks, team } from '../composables/team';
-import HorizontalTeamMembers from './HorizontalTeamMembers.vue';
+import HorizontalTeamMembers from './HorizontalContributors.vue';
 
 // Interface for GitHub contributor fetched from GitHub API
 interface GitHubContributor {

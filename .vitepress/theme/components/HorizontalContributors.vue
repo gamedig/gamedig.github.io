@@ -83,7 +83,7 @@ onMounted(async () => {
 
 <template>
     <div
-        class="horizontal-team-members-wrapper"
+        class="horizontal-contributors-container"
         @mouseenter="scroll.pause"
         @mouseleave="scroll.play"
         @touchstart="scroll.pause"
@@ -94,13 +94,13 @@ onMounted(async () => {
             ref="componentRef"
             :size="size"
             :members="members"
-            class="horizontal-team-members"
+            class="horizontal-contributors"
         />
     </div>
 </template>
 <style>
 /* Flex container setup for horizontal scrolling */
-.horizontal-team-members .container {
+.horizontal-contributors .container {
     display: flex;
     overflow-x: scroll;
 
@@ -115,7 +115,7 @@ onMounted(async () => {
 }
 
 /* Webkit-specific scrollbar styles */
-.horizontal-team-members .container::-webkit-scrollbar {
+.horizontal-contributors .container::-webkit-scrollbar {
     height: 8px;
     /* Initially hidden scrollbar track */
     background-color: transparent;
@@ -123,7 +123,7 @@ onMounted(async () => {
     transition: background-color 0.5s ease;
 }
 
-.horizontal-team-members .container::-webkit-scrollbar-thumb {
+.horizontal-contributors .container::-webkit-scrollbar-thumb {
     /* Initially hidden scrollbar thumb */
     background-color: transparent;
     border-radius: 4px;
@@ -132,44 +132,44 @@ onMounted(async () => {
 }
 
 /* Hover effects for default (light) theme - scrollbar becomes darker on light backgrounds */
-.horizontal-team-members .container:hover {
+.horizontal-contributors .container:hover {
     scrollbar-color: rgba(0, 0, 0, 0.5) transparent;
 }
 
-.horizontal-team-members .container:hover::-webkit-scrollbar-thumb {
+.horizontal-contributors .container:hover::-webkit-scrollbar-thumb {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.horizontal-team-members .container:hover::-webkit-scrollbar {
+.horizontal-contributors .container:hover::-webkit-scrollbar {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 /* Hover effects for .dark theme - scrollbar becomes lighter on dark backgrounds */
-.dark .horizontal-team-members .container:hover {
+.dark .horizontal-contributors .container:hover {
     scrollbar-color: rgba(255, 255, 255, 0.5) transparent;
 }
 
-.dark .horizontal-team-members .container:hover::-webkit-scrollbar-thumb {
+.dark .horizontal-contributors .container:hover::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.dark .horizontal-team-members .container:hover::-webkit-scrollbar {
+.dark .horizontal-contributors .container:hover::-webkit-scrollbar {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Item sizing and responsive adjustments */
-.horizontal-team-members.VPTeamMembers.small .container .item {
+.horizontal-contributors.VPTeamMembers.small .container .item {
     /* Base size for small items */
     flex: 1 0 224px;
 }
 
-.horizontal-team-members.VPTeamMembers.medium .container .item {
+.horizontal-contributors.VPTeamMembers.medium .container .item {
     /* Base size for medium items */
     flex: 1 0 256px;
 }
 
 @media (min-width: 375px) {
-    .horizontal-team-members.VPTeamMembers.medium .container .item {
+    .horizontal-contributors.VPTeamMembers.medium .container .item {
         /* Adjusted size for medium items on wider screens */
         flex: 1 0 288px;
     }
