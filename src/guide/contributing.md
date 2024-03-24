@@ -79,14 +79,16 @@ see what you'll accomplish!
 #### Reporting New Issues
 
 If you encounter a problem or see room for improvement, start by checking if
-there's already an [existing issue](https://github.com/gamedig/gamedig.github.io/issues). If
-not, you can create a new issue using the appropriate
-[issue template](https://github.com/gamedig/gamedig.github.io/issues/new/choose) to ensure
-clarity and comprehensiveness.
+there's already an
+[existing issue](https://github.com/gamedig/gamedig.github.io/issues). If not,
+you can create a new issue using the appropriate
+[issue template](https://github.com/gamedig/gamedig.github.io/issues/new/choose)
+to ensure clarity and comprehensiveness.
 
 #### Working on Existing Issues
 
-Browse the list of [open issues](https://github.com/gamedig/gamedig.github.io/issues) to find
+Browse the list of
+[open issues](https://github.com/gamedig/gamedig.github.io/issues) to find
 something that interests you. You can filter the list by using `labels` to
 narrow down the type of contributions that match your skills and interests. We
 encourage open collaboration and do not assign issues to specific contributors.
