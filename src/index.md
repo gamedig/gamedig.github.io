@@ -45,23 +45,21 @@ features:
     link: /package/support-list
     linkText: 'View Support List'
 
-    # This needs to be changed
   - icon: <span class="i-carbon:cloud-download"></span>
     title: Cross-Platform Compatibility
     details:
       'Maximize flexibility with our libraries, cross-platform compatibility,
       ensuring seamless integration for developers.'
-    link: /guide/key-features
+    link: /guide/features
     linkText: 'Discover Key Features'
 
-    # This overview page got removed in package structue
   - icon: <span class="i-carbon:terminal"></span>
     title: Command Line Interface
     details:
       'Unleash the full potential of GameDig through our CLI, engineered for
       ease of use. Tailor your game server queries with precision and
       efficiency.'
-    link: /cli/
+    link: /guide/cli
     linkText: Explore the CLI
 
   - icon: <span class="i-carbon:logo-github"></span>

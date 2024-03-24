@@ -10,6 +10,8 @@ export default function nav(): DefaultTheme.NavItem[] {
                     items: [
                         { text: 'Getting Started', link: '/guide/' },
                         { text: 'How to Contribute', link: '/guide/contributing' },
+                        { text: 'Key Features', link: '/guide/features' },
+                        { text: 'Explore the CLI', link: '/guide/cli' },
                         { text: 'Troubleshooting Common Issues', link: '/guide/troubleshooting' },
                     ],
                 },
