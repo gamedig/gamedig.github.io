@@ -11,7 +11,7 @@
     "@types/node": "^20.11.30",
     "@iconify-json/carbon": "^1.1.31",
     "unocss": "^0.58.9",
-    "vitepress": "1.0.1",
+    "vitepress": "1.0.2",
     "unplugin-vue-components": "^0.26.0"
   }
 }
