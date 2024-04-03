@@ -29,13 +29,12 @@
     },
     "devDependencies": {
         "@iconify-json/carbon": "^1.1.31",
-        "@types/node": "^20.11.30",
+        "@types/node": "^20.12.3",
         "markdown-it-mathjax3": "^4.3.2",
         "npm-run-all": "^4.1.5",
         "prettier": "^3.2.5",
         "typescript": "^5.4.3",
-        "unocss": "^0.58.7",
+        "unocss": "^0.58.9",
         "unplugin-vue-components": "^0.26.0",
-        "vitepress": "1.0.1"
+        "vitepress": "1.0.2"
     }
-}
