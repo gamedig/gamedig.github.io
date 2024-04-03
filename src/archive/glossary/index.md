@@ -1,6 +1,6 @@
 ---
-title: Archive
-description: A collection of archived documentation
+title: Glossary
+description: A glossary of terms used in GameDig documentation
 ---
 
 ::: warning :construction: Uh oh!

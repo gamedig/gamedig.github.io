@@ -1,0 +1,48 @@
+name: Bug report
+description: Found a bug? Let us know so we can fix it.
+labels:
+    - bug
+body:
+    - type: markdown
+      attributes:
+          value: |
+              * Before you file an issue read the [Contributing guide](https://gamedig.github.io/guide/contributing).
+              * Check to make sure someone hasn't already opened a similar [issue](https://github.com/gamedig/gamedig.github.io/issues).
+
+    - type: checkboxes
+      id: terms
+      attributes:
+          label: Code of Conduct
+          description: This project has a Code of Conduct that all participants are expected to understand and follow.
+          options:
+              - label: I have read and agree to the [Code of Conduct](https://gamedig.github.io/code-of-conduct)
+                required: true
+
+    - type: textarea
+      attributes:
+          label: Give a brief description of the bug
+          description: |
+              - What did you expect to happen?
+              - What actually happened?
+      validations:
+          required: true
+
+    - type: textarea
+      attributes:
+          label: Steps to reproduce the bug
+          description: |
+              - Are you able to reliably reproduce the problem? 
+              - How often does it occur?
+              - In as much detail as possible, how can we reproduce the bug?
+              - What happened after you took those steps?
+              - What did you expect to happen?
+      validations:
+          required: true
+
+    - type: textarea
+      attributes:
+          label: Additional information
+          description: |
+              - Add any other context or screenshots about the bug here.
+      validations:
+          required: false

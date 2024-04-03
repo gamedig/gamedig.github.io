@@ -1,6 +1,6 @@
 ---
-title: Archive
-description: A collection of archived documentation
+title: Game Archive
+description: A archive of game specific query protocols
 ---
 
 ::: warning :construction: Uh oh!

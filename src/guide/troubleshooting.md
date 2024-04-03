@@ -1,6 +1,6 @@
 ---
-title: Archive
-description: A collection of archived documentation
+title: Troubleshooting
+description: Resolve common issues and optimize your GameDig experience
 ---
 
 ::: warning :construction: Uh oh!
@@ -17,7 +17,7 @@ have suggestions, feedback, or wish to contribute directly, please reach out via
 our [GitHub repository](https://github.com/gamedig/gamedig.github.io). You can
 also suggest edits directly from the page by clicking the
 `Suggest changes to this page` below. You can check out the
-[contribution guide](/guide/contributing) for more information. We look forward
-to hearing from you!
+[contribution guide](/guide/contributing#contribution-workflow) for more
+information. We look forward to hearing from you!
 
 :::

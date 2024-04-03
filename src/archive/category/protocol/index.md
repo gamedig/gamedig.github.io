@@ -1,6 +1,6 @@
 ---
-title: Archive
-description: A collection of archived documentation
+title: Protocol Archive
+description: A archive of query protocols that are widely used
 ---
 
 ::: warning :construction: Uh oh!

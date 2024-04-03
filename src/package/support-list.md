@@ -1,6 +1,6 @@
 ---
-title: Archive
-description: A collection of archived documentation
+title: Support List
+description: A list of resources that GameDig supports
 ---
 
 ::: warning :construction: Uh oh!

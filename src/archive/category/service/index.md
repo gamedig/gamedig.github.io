@@ -1,6 +1,6 @@
 ---
-title: Archive
-description: A collection of archived documentation
+title: Service Archive
+description: A collection of archived service documentation
 ---
 
 ::: warning :construction: Uh oh!

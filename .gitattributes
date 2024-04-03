@@ -1,0 +1,7 @@
+# Ensure consistent line endings across different OSes, regardless of user settings.
+# In case user don't have core.autocrlf set.
+* text=auto
+
+# Normalize Markdown files to use native line endings
+# on checkout and enable Markdown-aware diffs.
+*.md text diff=markdown

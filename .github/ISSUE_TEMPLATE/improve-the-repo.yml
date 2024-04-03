@@ -1,0 +1,36 @@
+name: Improve the GitHub repository
+description: Make a suggestion to improve the GitHub repository.
+labels:
+    - enhancement
+body:
+    - type: markdown
+      attributes:
+          value: |
+              * Before you file an issue read the [Contributing guide](https://gamedig.github.io/guide/contributing).
+              * Check to make sure someone hasn't already opened a similar [issue](https://github.com/gamedig/gamedig.github.io/issues).
+
+    - type: checkboxes
+      id: terms
+      attributes:
+          label: Code of Conduct
+          description: This project has a Code of Conduct that all participants are expected to understand and follow.
+          options:
+              - label: I have read and agree to the [Code of Conduct](https://gamedig.github.io/code-of-conduct)
+                required: true
+
+    - type: textarea
+      attributes:
+          label: What changes are you suggesting?
+          description: |
+              - Give as much detail as you can to help us understand the change you want to see. 
+              - Why should something be changed? What use cases does it support? 
+              - What is the expected outcome?
+      validations:
+          required: true
+
+    - type: textarea
+      attributes:
+          label: Additional information
+          description: Any additional information.
+      validations:
+          required: false

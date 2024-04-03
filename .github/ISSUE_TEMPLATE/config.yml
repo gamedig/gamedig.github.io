@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+    - name: Looking to help with the docs?
+      url: https://gamedig.github.io/guide/contributing
+      about: 'Take a look at the contributing guide and see how you can help.'
+    - name: GameDig Community Discord
+      url: https://discord.gg/6WjmBsk2Xh
+      about: 'Join the GameDig Community Discord. Note: The community is not a replacement for options provided above.'

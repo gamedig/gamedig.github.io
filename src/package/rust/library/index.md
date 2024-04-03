@@ -1,6 +1,6 @@
 ---
-title: Archive
-description: A collection of archived documentation
+title: Rust GameDig Library
+description: A Rust library for querying game servers
 ---
 
 ::: warning :construction: Uh oh!

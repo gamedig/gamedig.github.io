@@ -1,6 +1,6 @@
 ---
-title: Archive
-description: A collection of archived documentation
+title: Library Archive
+description: A collection of archived library documentation
 ---
 
 ::: warning :construction: Uh oh!

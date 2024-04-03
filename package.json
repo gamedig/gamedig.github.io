@@ -1,17 +1,41 @@
 {
-  "name": "gamedig-site",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "dev": "vitepress dev .",
-    "build": "vitepress build .",
-    "preview": "vitepress preview ."
-  },
-  "devDependencies": {
-    "@types/node": "^20.12.3",
-    "@iconify-json/carbon": "^1.1.31",
-    "unocss": "^0.58.9",
-    "vitepress": "1.0.2",
-    "unplugin-vue-components": "^0.26.0"
-  }
+    "name": "gamedig-site",
+    "author": "GameDig Organization & Contributors",
+    "license": "MIT",
+    "type": "module",
+    "private": true,
+    "homepage": "https://gamedig.github.io",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gamedig/gamedig.github.io.git"
+    },
+    "bugs": {
+        "url": "https://github.com/gamedig/gamedig.github.io/issues"
+    },
+    "engines": {
+        "node": ">=20.11.1",
+        "npm": ">=10.0.0"
+    },
+    "scripts": {
+        "dev": "vitepress dev .",
+        "build": "run-s build:step:*",
+        "build:preview": "vitepress preview .",
+        "build:step:format": "prettier --write **/**.{ts,json,yml,md,vue,css}",
+        "build:step:vitepress": "vitepress build .",
+        "check": "run-s check:step:*",
+        "check:step:format": "prettier --check **/**.{ts,json,yml,md,vue,css}",
+        "check:step:vitepress": "vitepress build .",
+        "preinstall": "npx only-allow npm"
+    },
+    "devDependencies": {
+        "@iconify-json/carbon": "^1.1.31",
+        "@types/node": "^20.12.3",
+        "markdown-it-mathjax3": "^4.3.2",
+        "npm-run-all": "^4.1.5",
+        "prettier": "^3.2.5",
+        "typescript": "^5.4.3",
+        "unocss": "^0.58.9",
+        "unplugin-vue-components": "^0.26.0",
+        "vitepress": "1.0.2"
+    }
 }
