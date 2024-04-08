@@ -8,19 +8,16 @@ import './styles/vars.css';
 import './styles/rainbow.css';
 import './styles/overrides.css';
 
-import HomePage from './components/HomePage.vue';
+import Layout from './components/Layout.vue';
 
 let homePageStyle: HTMLStyleElement | undefined;
 
 export default {
     ...Theme,
 
-    Layout: () =>
-        // Create a Vue component with Theme.Layout as the base,
-        // and inject HomePage component after home features
-        h(Theme.Layout, null, {
-            'home-features-after': () => h(HomePage),
-        }),
+    Layout: () => {
+        return h(Layout);
+    },
 
     enhanceApp({ router }: { router: Router }) {
         // Skip this if not running in the browser
