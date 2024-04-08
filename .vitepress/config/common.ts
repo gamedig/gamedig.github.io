@@ -3,7 +3,6 @@ import { readFileSync } from 'fs';
 import { defineConfig } from 'vitepress';
 
 import Unocss from 'unocss/vite';
-import Components from 'unplugin-vue-components/vite';
 
 const read = (path: string) => readFileSync(resolve(process.cwd(), path), 'utf-8');
 
@@ -36,12 +35,6 @@ export default defineConfig({
         plugins: [
             Unocss({
                 configFile: '../unocss.config.ts',
-            }),
-
-            Components({
-                dirs: ['../.vitepress/theme/components'],
-                include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
-                dts: false,
             }),
         ],
     },
