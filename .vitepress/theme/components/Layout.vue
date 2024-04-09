@@ -13,14 +13,6 @@ const shouldEnableTransitions = (): boolean =>
     'startViewTransition' in document &&
     window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
 
-// Maximum radius for the circle transition effect based on click position
-const calculateMaxRadius = (x: number, y: number): number => {
-    const maxWidth = Math.max(x, window.innerWidth - x);
-    const maxHeight = Math.max(y, window.innerHeight - y);
-
-    return Math.hypot(maxWidth, maxHeight);
-};
-
 // Provide a function for toggling the appearance (dark/light mode)
 provide('toggle-appearance', async (event: MouseEvent) => {
     const { clientX: x, clientY: y } = event;
@@ -31,10 +23,18 @@ provide('toggle-appearance', async (event: MouseEvent) => {
         return;
     }
 
-    const maxRadius = calculateMaxRadius(x, y);
+    // Maximum radius for the circle transition effect based on click position
+    const maxRadius = (x: number, y: number): number => {
+        const maxWidth = Math.max(x, window.innerWidth - x);
+        const maxHeight = Math.max(y, window.innerHeight - y);
+
+        return Math.hypot(maxWidth, maxHeight);
+    };
+
+    // Clip paths for the transition effect
     const clipPathValues = [
         `circle(0px at ${x}px ${y}px)`,
-        `circle(${maxRadius}px at ${x}px ${y}px)`,
+        `circle(${maxRadius(x, y)}px at ${x}px ${y}px)`,
     ];
 
     // Transition view with the startViewTransition API
@@ -44,7 +44,7 @@ provide('toggle-appearance', async (event: MouseEvent) => {
         await nextTick();
     }).ready;
 
-    // Animate the transition using the calculated clip path values
+    // Animate the transition using the calculated clip paths
     document.documentElement.animate(
         { clipPath: isDark.value ? clipPathValues.reverse() : clipPathValues },
         {
