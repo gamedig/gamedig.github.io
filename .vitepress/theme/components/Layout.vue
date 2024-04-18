@@ -8,7 +8,10 @@ import HomePage from './HomePage.vue';
 // isDark reactive property from Vitepress's global state
 const { isDark } = useData();
 
-// Determine if transitions should be enabled based on browser support and preference
+/**
+ * Check if CSS transitions should be enabled based on browser support and user preferences.
+ * @returns {boolean} True if transitions should be enabled, false otherwise.
+ */
 const shouldEnableTransitions = (): boolean =>
     'startViewTransition' in document &&
     window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
@@ -23,7 +26,12 @@ provide('toggle-appearance', async (event: MouseEvent) => {
         return;
     }
 
-    // Maximum radius for the circle transition effect based on click position
+    /**
+     * Calculate the maximum radius for the clip path based on the cursor position.
+     * @param {number} x - The x-coordinate of the cursor.
+     * @param {number} y - The y-coordinate of the cursor.
+     * @returns {number} The maximum radius for the clip path.
+     */
     const maxRadius = (x: number, y: number): number => {
         const maxWidth = Math.max(x, window.innerWidth - x);
         const maxHeight = Math.max(y, window.innerHeight - y);
@@ -31,7 +39,9 @@ provide('toggle-appearance', async (event: MouseEvent) => {
         return Math.hypot(maxWidth, maxHeight);
     };
 
-    // Clip paths for the transition effect
+    /**
+     * Clip paths for the transition effect
+     */
     const clipPathValues = [
         `circle(0px at ${x}px ${y}px)`,
         `circle(${maxRadius(x, y)}px at ${x}px ${y}px)`,
