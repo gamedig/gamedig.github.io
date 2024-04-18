@@ -1,18 +1,24 @@
 <script setup lang="ts">
 // Based on https://github.com/vuejs/vitepress/blob/20511006dba516ca8c06ed1dd3516547af668a0e/src/client/theme-default/components/VPTeamMembers.vue
 
-import { onMounted, onUnmounted, ref, nextTick, Ref } from 'vue';
-import type { DefaultTheme } from 'vitepress/theme';
-import { VPTeamMembers } from 'vitepress/theme';
+import { onMounted, onUnmounted, ref, nextTick, type Ref } from 'vue';
+import { VPTeamMembers, type DefaultTheme } from 'vitepress/theme';
 
-// Wrapper for component element.
+/**
+ * Wrapper for scroll component
+ */
 interface VPTeamMembersComponent {
+    /** The scroll container element. */
     $el: HTMLElement;
 }
 
-// Defines the props expected by this component, with size being optional.
+/**
+ * Props for the HorizontalContributors component.
+ */
 interface Props {
+    /** The size of the parent container. */
     size?: 'small' | 'medium';
+    /** The contributors to display. */
     members: DefaultTheme.TeamMember[];
 }
 
@@ -22,20 +28,36 @@ const props = withDefaults(defineProps<Props>(), {
     size: 'medium',
 });
 
-// Refs for the component instance and mouse over state.
+/**
+ * Reference to the scroll component instance.
+ */
 const componentRef: Ref<VPTeamMembersComponent | null> = ref(null);
+
+/**
+ * Pause state for scrolling.
+ */
 const pauseScroll = ref(false);
 
-// Handler for scroll state.
+/**
+ * Scroll control object.
+ */
 const scroll = {
+    /**
+     * Pause the scrolling.
+     */
     pause: () => (pauseScroll.value = true),
+    /**
+     * Resume the scrolling.
+     */
     play: () => (pauseScroll.value = false),
 };
 
-// Interval for continuous scrolling.
+/**
+ * Interval for continuous scrolling.
+ */
 let interval: ReturnType<typeof setInterval> | null = null;
 
-// Requires to be stated before the lifecycle hooks.
+// Requires to be stated before other lifecycle hooks.
 // Causes no active component instance if not
 onUnmounted(() => {
     // Clean up the interval

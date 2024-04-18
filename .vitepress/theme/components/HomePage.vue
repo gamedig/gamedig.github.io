@@ -1,10 +1,15 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
 import { VPTeamMembers } from 'vitepress/theme';
-import { createLinks, team } from '../composables/team';
+
+import { createLinks } from '../utils/links';
+import { data as team } from '../composables/team.data';
+
 import HorizontalContrbutors from './HorizontalContributors.vue';
 
-// Interface for GitHub contributor fetched from GitHub API
+/**
+ * Contributor fetched from GitHub API
+ */
 interface GitHubContributor {
     login: string;
     id: number;
@@ -27,21 +32,32 @@ interface GitHubContributor {
     contributions: number;
 }
 
-// Interface for simplified contributor information used in the template
+/**
+ * Simplified contributor information used in the template
+ */
 interface Contributor {
     avatar: string;
     name: string;
     github: string;
 }
 
-// Reactive properties to manage contributors list and fetch error state
+/**
+ * List of contributors fetched from GitHub
+ */
 const contributors = ref<Contributor[]>([]);
+/**
+ * Flag to indicate if an error occurred while fetching contributors
+ */
 const fetchError = ref(false);
 
-// Cache key for storing contributors data in localStorage
+/**
+ * Cache key for storing contributors in localStorage
+ */
 const cacheKey = 'github-contributors';
 
-// Fetch contributors from GitHub or cache
+/**
+ * Try to fetch contributors from cache, otherwise fetch new contributors
+ */
 const fetchContributors = async () => {
     const cachedData = localStorage.getItem(cacheKey);
     const now = new Date().getTime();
@@ -64,7 +80,9 @@ const fetchContributors = async () => {
     }
 };
 
-// Function to fetch new contributors from GitHub and update the cache
+/**
+ * Fetch contributors from GitHub API and update the cache
+ */
 const fetchNewContributors = async (now: number) => {
     // Repositories to fetch contributors from
     const repos = [
@@ -100,7 +118,7 @@ const fetchNewContributors = async (now: number) => {
             .filter(
                 // Exclude team members
                 (contributor) =>
-                    !team.value.some((teamMember) => teamMember.github === contributor.login),
+                    !team.members.some((teamMember) => teamMember.github === contributor.login),
             )
             .filter(
                 // Exclude bots
@@ -141,7 +159,7 @@ onMounted(fetchContributors);
                 <div class="section vp-doc flex flex-col items-center mt-10">
                     <h2 id="meet-the-team" class="section-title op70 font-normal">Meet The Team</h2>
                     <div class="section-content w-full p-10">
-                        <VPTeamMembers size="small" :members="team" />
+                        <VPTeamMembers size="small" :members="team.members" />
                     </div>
                 </div>
 
