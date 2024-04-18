@@ -35,6 +35,6 @@
         "prettier": "^3.2.5",
         "typescript": "^5.4.5",
         "unocss": "^0.59.3",
-        "vitepress": "1.1.0"
+        "vitepress": "1.1.1"
     }
 }
