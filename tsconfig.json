@@ -17,3 +17,4 @@
     "include": ["./.vitepress/theme/**/**/*", "./.vitepress/config"],
     "exclude": ["node_modules", "dist"]
 }
+

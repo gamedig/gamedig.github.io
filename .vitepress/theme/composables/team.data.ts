@@ -15,6 +15,7 @@ export interface TeamMember extends Partial<DefaultTheme.TeamMember> {
     /** LinkedIn profile URL (optional) */
     linkedin?: string;
     /** Mastodon URL (optional) */
+    
     mastodon?: string;
     /** Twitter URL (optional) */
     twitter?: string;
