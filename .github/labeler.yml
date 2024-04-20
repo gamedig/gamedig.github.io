@@ -1,0 +1,58 @@
+# Workflow
+github:
+    - .github/**
+
+issue_template:
+    - .github/ISSUE_TEMPLATE/**
+
+pull_request_template:
+    - .github/PULL_REQUEST_TEMPLATE.md
+
+workflow:
+    - .github/workflows/**
+
+dependabot:
+    - .github/dependabot.yml
+    - .github/workflows/dependabot-reviewer.yml
+
+# Vitepress
+vitepress:
+    - .vitepress/**
+
+config:
+    - .vitepress/config/**
+
+theme:
+    - .vitepress/theme/**
+
+components:
+    - .vitepress/theme/components/**
+
+composables:
+    - .vitepress/theme/composables/**
+
+styles:
+    - .vitepress/theme/styles/**
+
+# Site Content
+site_content:
+    - src/**
+
+# Repo
+package:
+    - package.json
+    - package-lock.json
+
+git:
+    - .gitignore
+    - .gitattributes
+
+prettier:
+    - .prettierrc
+    - .prettierignore
+
+tsconfig:
+    - tsconfig.json
+
+unoconfig:
+    - uno.config.ts
