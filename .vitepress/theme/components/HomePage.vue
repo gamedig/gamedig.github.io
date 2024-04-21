@@ -123,7 +123,9 @@ const fetchNewContributors = async (now: number) => {
             .filter(
                 // Exclude bots
                 (contributor) =>
-                    contributor.login !== 'actions-user' && contributor.login !== 'dependabot[bot]',
+                    contributor.login !== 'actions-user' &&
+                    contributor.login !== 'dependabot[bot]' &&
+                    contributor.login !== 'github-actions[bot]',
             )
             .map((contributor) => ({
                 avatar: contributor.avatar_url,
