@@ -41,4 +41,5 @@ responsible disclosure measure.
 This project is distributed under the MIT License and is provided "AS IS"
 without any warranty, express or implied. This includes but is not limited to
 warranties of fitness for a particular purpose or software security. Refer to
-the [LICENSE](https://github.com/gamedig/gamedig.github.io/blob/main/LICENSE) file for more details.
+the [LICENSE](https://github.com/gamedig/gamedig.github.io/blob/main/LICENSE)
+file for more details.
