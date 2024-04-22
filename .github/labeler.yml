@@ -1,92 +1,58 @@
-# Workflow Related Changes
+# Workflow
 github:
-    changed-files:
-        any-glob-to-any-file:
-            - .github/**
+    - .github/**
 
 issue_template:
-    changed-files:
-        any-glob-to-any-file:
-            - .github/ISSUE_TEMPLATE/**
+    - .github/ISSUE_TEMPLATE/**
 
 pull_request_template:
-    changed-files:
-        any-glob-to-any-file:
-            - .github/PULL_REQUEST_TEMPLATE.md
+    - .github/PULL_REQUEST_TEMPLATE.md
 
 workflow:
-    changed-files:
-        any-glob-to-any-file:
-            - .github/workflows/**
+    - .github/workflows/**
 
 dependabot:
-    changed-files:
-        any-glob-to-any-file:
-            - .github/dependabot.yml
-            - .github/workflows/dependabot-reviewer.yml
+    - .github/dependabot.yml
+    - .github/workflows/dependabot-reviewer.yml
 
-# Vitepress Related Changes
+# Vitepress
 vitepress:
-    changed-files:
-        any-glob-to-any-file:
-            - .vitepress/**
+    - .vitepress/**
 
 config:
-    changed-files:
-        any-glob-to-any-file:
-            - .vitepress/config/**
+    - .vitepress/config/**
 
 theme:
-    changed-files:
-        any-glob-to-any-file:
-            - .vitepress/theme/**
+    - .vitepress/theme/**
 
 components:
-    changed-files:
-        any-glob-to-any-file:
-            - .vitepress/theme/components/**
+    - .vitepress/theme/components/**
 
 composables:
-    changed-files:
-        any-glob-to-any-file:
-            - .vitepress/theme/composables/**
+    - .vitepress/theme/composables/**
 
 styles:
-    changed-files:
-        any-glob-to-any-file:
-            - .vitepress/theme/styles/**
+    - .vitepress/theme/styles/**
 
-# Site Content Changes
+# Site Content
 site_content:
-    changed-files:
-        any-glob-to-any-file:
-            - src/**
+    - src/**
 
-# Repository Configuration Changes
+# Repo
 package:
-    changed-files:
-        any-glob-to-any-file:
-            - package.json
-            - package-lock.json
+    - package.json
+    - package-lock.json
 
 git:
-    changed-files:
-        any-glob-to-any-file:
-            - .gitignore
-            - .gitattributes
+    - .gitignore
+    - .gitattributes
 
 prettier:
-    changed-files:
-        any-glob-to-any-file:
-            - .prettierrc
-            - .prettierignore
+    - .prettierrc
+    - .prettierignore
 
 tsconfig:
-    changed-files:
-        any-glob-to-any-file:
-            - tsconfig.json
+    - tsconfig.json
 
 unoconfig:
-    changed-files:
-        any-glob-to-any-file:
-            - uno.config.ts
+    - uno.config.ts
