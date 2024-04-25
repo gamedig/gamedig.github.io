@@ -3,7 +3,7 @@ import { computed, onMounted, ref } from 'vue';
 import { useData } from 'vitepress';
 import Giscus from '@giscus/vue';
 
-const { isDark, frontmatter } = useData();
+const { isDark, frontmatter, title } = useData();
 
 // Theme based on dark mode
 const theme = computed(() => (isDark.value ? 'transparent_dark' : 'light'));
@@ -27,7 +27,7 @@ onMounted(() => {
         <!-- Spacer div for styling -->
         <div style="margin-top: 2rem" />
         <!-- Giscus component widget for embedding GitHub discussions -->
-        <div class="comments-giscus-container">
+        <div :key="title" class="comments-giscus-container">
             <Giscus
                 id="comments"
                 repo="gamedig/gamedig.github.io"
