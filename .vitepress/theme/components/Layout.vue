@@ -4,9 +4,10 @@ import { nextTick, provide } from 'vue';
 import DefaultTheme from 'vitepress/theme';
 
 import HomePage from './HomePage.vue';
+import Comments from './Comments.vue';
 
-// isDark reactive property from Vitepress's global state
 const { isDark } = useData();
+const { Layout } = DefaultTheme;
 
 /**
  * Check if CSS transitions should be enabled based on browser support and user preferences.
@@ -67,10 +68,13 @@ provide('toggle-appearance', async (event: MouseEvent) => {
 </script>
 
 <template>
-    <DefaultTheme.Layout>
+    <Layout>
         <!-- Layout overrides for the default theme -->
         <template #home-features-after>
             <HomePage />
         </template>
-    </DefaultTheme.Layout>
+        <template #doc-after>
+            <Comments />
+        </template>
+    </Layout>
 </template>
