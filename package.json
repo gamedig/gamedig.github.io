@@ -13,8 +13,8 @@
         "url": "https://github.com/gamedig/gamedig.github.io/issues"
     },
     "engines": {
-        "node": ">=20.15.0",
-        "npm": ">=10.7.0"
+        "node": ">=22.11.0",
+        "npm": ">=10.9.0"
     },
     "scripts": {
         "dev": "vitepress dev .",
