@@ -19,7 +19,7 @@ export default defineConfig({
         footer: {
             message:
                 "Made with ❤️ | Adheres to the <a href='/code-of-conduct'>Contributor Covenant Code of Conduct</a>",
-            copyright: `Copyright © 2022-2024 GameDig Organization & Contributors. Licensed under the <a href='/legal'>MIT License</a>.`,
+            copyright: `Copyright © 2022-2025 GameDig Organization & Contributors. Licensed under the <a href='/legal'>MIT License</a>.`,
         },
     },
 });
