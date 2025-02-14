@@ -162,10 +162,10 @@ onMounted(fetchContributors);
                     <h2 id="meet-the-team" class="section-title op70 font-normal">Meet The Team</h2>
 
                     <!-- Workaround to display team members with odd number in two columns -->
-                    <div class="section-content-top w-full p-10 pb-1">
+                    <div class="section-content-top w-full p-10 pb-[1px]">
                         <VPTeamMembers size="small" :members="team.members.slice(0, 2)" />
                     </div>
-                    <div class="section-content-bottom w-full p-10 pt-1">
+                    <div class="section-content-bottom w-full p-10 pt-[1px]">
                         <VPTeamMembers size="small" :members="team.members.slice(2)" />
                     </div>
                 </div>
