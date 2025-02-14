@@ -160,8 +160,13 @@ onMounted(fetchContributors);
                 <!-- Section to display team members -->
                 <div class="section vp-doc flex flex-col items-center mt-10">
                     <h2 id="meet-the-team" class="section-title op70 font-normal">Meet The Team</h2>
-                    <div class="section-content w-full p-10">
-                        <VPTeamMembers size="small" :members="team.members" />
+
+                    <!-- Workaround to display team members with odd number in two columns -->
+                    <div class="section-content-top w-full p-10 pb-1">
+                        <VPTeamMembers size="small" :members="team.members.slice(0, 2)" />
+                    </div>
+                    <div class="section-content-bottom w-full p-10 pt-1">
+                        <VPTeamMembers size="small" :members="team.members.slice(2)" />
                     </div>
                 </div>
 
