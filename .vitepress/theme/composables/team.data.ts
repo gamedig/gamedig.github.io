@@ -59,7 +59,7 @@ const teamMembers: TeamMember[] = [
     {
         avatar: 'https://github.com/CosminPerRam.png',
         github: 'CosminPerRam',
-        name: 'CosminPerRam',
+        name: 'Cosmin',
         title: 'Programmer',
         org: 'nerds-sh',
         desc: 'Founder of Rust GameDig & GameDig Maintainer.',
@@ -78,6 +78,13 @@ const teamMembers: TeamMember[] = [
         title: 'Programmer',
         desc: 'Rust GameDig Maintainer.',
     },
+    {
+        avatar: 'https://github.com/xCausxn.png',
+        github: 'xCausxn',
+        name: 'James',
+        title: 'Programmer',
+        desc: 'Node GameDig Maintainer.',
+    },
 ];
 
 /**
@@ -86,8 +93,6 @@ const teamMembers: TeamMember[] = [
  */
 export default defineLoader({
     load(): Data {
-        return {
-            members: teamMembers.map(createLinks),
-        };
+        return { members: teamMembers.map(createLinks) };
     },
 });
