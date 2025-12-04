@@ -28,7 +28,7 @@
         "preinstall": "npx only-allow npm"
     },
     "devDependencies": {
-        "@iconify-json/carbon": "^1.2.14",
+        "@iconify-json/carbon": "^1.2.15",
         "@types/dom-view-transitions": "^1.0.6",
         "@types/node": "^24.10.1",
         "markdown-it-mathjax3": "^4.3.2",
